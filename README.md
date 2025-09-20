@@ -29,3 +29,19 @@ Repositório do assistant (voz/áudio) extraído do projeto Zappro via git subtr
 - Este repo não inclui o Makefile do DevLoop. Os alvos acima são específicos do assistant.
 - Histórico do assistant foi preservado no split. Ajustes de docs/UX podem ser feitos por PRs aqui.
 
+
+
+## Comandos
+- `make install` — cria venv e instala deps
+- `make assistant-check` — diagnóstico ambiente/pacotes/env
+- `make assistant-dev` — inicia assistant em modo texto
+
+## Variáveis de ambiente
+- `OLLAMA_HOST` (ex.: http://localhost:11434)
+- `ASSISTANT_MODEL_PRIMARY` (ex.: gpt-5)
+- `ASSISTANT_MODEL_FALLBACK` (ex.: llama3.1:8b-instruct)
+
+## Troubleshooting
+- `webrtcvad` em import: instale `setuptools` na venv (`pip install setuptools`).
+- Áudio local (Ubuntu): instale `portaudio19-dev` antes de `pip install`.
+- Ollama não detectado: exporte `OLLAMA_HOST` e suba um modelo.
