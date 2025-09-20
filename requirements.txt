@@ -1,0 +1,9 @@
+pyyaml
+requests
+pyautogui
+webrtcvad
+# STT options (install as needed):
+vosk
+# whisper-cpp bindings are platform-specific; skip here
+# faster-whisper for CUDA STT (optional):
+# faster-whisper

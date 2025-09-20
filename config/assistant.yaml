@@ -1,0 +1,13 @@
+language: pt-BR
+stt:
+  engine: vosk
+  enabled: false
+tts:
+  engine: piper
+  enabled: false
+llm:
+  primary: gpt-5
+  fallback: llama3.1:8b-instruct
+  ollama_host: http://localhost:11434
+safety:
+  confirm_destructive: true
